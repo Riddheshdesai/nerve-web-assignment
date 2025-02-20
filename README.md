@@ -25,7 +25,7 @@ This project is a responsive UI built using **React (Vite) and plain CSS** to re
 1. Clone the repository:
    ```bash
    git clone https://github.com/Riddheshdesai/nerve-web-assignment.git
-   cd strategy-toggle-ui
+   cd nerve-web-assignment
    ```
 2. Install dependencies:
    ```bash
