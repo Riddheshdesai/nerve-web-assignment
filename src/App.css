@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-section {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 600px;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.tabs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f8f8fa;
+  border-radius: 12px;
+  padding: 5px 16px;
+  /* gap: 16px; */
+  margin-bottom: 20px;
+}
+
+.tabs .tab-btn {
+  /* width: 33.33%; */
+  background: none;
+  border: none;
+  padding: 8px 24px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 14px;
+  color: #90909a;
+}
+
+.tabs .tab-btn.active {
+  background-color: #224af4c4;
+  color: #fff;
+  transition: all 200ms;
+}
+
+/* Date Picker  */
+
+.date-picker-container {
+  width: 100%;
+  margin-bottom: 16px;
+}
+.date-pickers-list {
+  width: 100%;
+  padding: 0px 16px;
+}
+
+.date-picker-dropdown {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  padding: 10px 16px;
+  border: #e7e7e7 solid 1px;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.date-picker-dropdown span {
+  align-self: center;
+}
+
+.stratergy-container {
+  width: 100%;
+  max-height: fit-content;
+  overflow-y: auto;
+}
+
+.stratergy-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  border-radius: 12px;
+  padding: 14px 16px;
+  align-items: center;
+  border: #e7e7e7 solid 1px;
+}
+
+.bold-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.stratergy-content .strategy-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #90909a;
+  font-weight: 500;
+  margin-left: 6px;
+}
+
+.stratergy-content .dot {
+  height: 6px;
+  width: 6px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.strategy-text-container {
+  display: flex;
+  align-items: center;
+}
+
+.no-data-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 24px;
+}
+
+.no-data-container .no-data-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #4c4b4b;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.arrow-down {
+  cursor: pointer;
+}
+
+/* padding : 6px 10px */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .tabs .tab-btn {
+    padding: 8px 22px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .tabs .tab-btn {
+    padding: 8px 20px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+  .tabs .tab-btn {
+    padding: 6px 10px;
+    font-size: 15px;
+  }
+  .tabs {
+    padding: 5px 12px;
+  }
+  .bold-text {
+    font-size: 15px;
+  }
+  .stratergy-content .strategy-text {
+    font-size: 14px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 360px) {
+  .tabs .tab-btn {
+    padding: 6px 8px;
+    font-size: 14px;
+  }
+  .tabs {
+    padding: 5px 8px;
+  }
+  .bold-text {
+    font-size: 15px;
+  }
+  .stratergy-content .strategy-text {
+    font-size: 14px;
+  }
+}
